@@ -1,4 +1,4 @@
 .venv/
 uv.
-*.log
 *.gz
+root/var/log/apache2/access.log
