@@ -15,9 +15,10 @@ import gzip
 from datetime import datetime
 
 # Paths
-log_path = pathlib.Path("/var/log/apache2/access.log")
-report_path = pathlib.Path("report.json")
-archive_dir = pathlib.Path("/archive")
+SCRIPT_DIR = pathlib.Path(__file__).parent.resolve()
+log_path = SCRIPT_DIR / "root" / "var" / "log" / "apache2" / "access.log"
+report_path = SCRIPT_DIR / "report.json"
+archive_dir = SCRIPT_DIR / "archive"
 
 # Vars
 archived_log_age = 7 # days
@@ -52,6 +53,7 @@ def parse_line_time(line):
     
 
 def archive_log(log_lines, archive_dir, days):
+    archive_dir.mkdir(exist_ok=True, parents=True)
     # Cek umur log
     archived_log = []
     kept_lines = []
