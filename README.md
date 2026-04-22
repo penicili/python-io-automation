@@ -9,8 +9,14 @@ Perintah:
 - Report dalam bentuk JSON
 - Archive log ke /archive/*.log.gz
 - Hapus Archive
- 
-## 2. Logging
+
+## 2. Config files parsing
+Study Case: Multi environment Config manager
+Konteks: ada beberapa environment, parsing config untuk masing2 environment, ambil dari .env.example dan masukin ke .env
+Perintah:
+- Baca example.config.yaml
+- Baca secrets.json
+- Tulis ke envvars ke config.yaml sesuai argument
 
 ## 3. Python Automation
 

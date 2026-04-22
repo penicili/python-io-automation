@@ -1,0 +1,27 @@
+app:
+  name: MyApp
+  version: 1.0.0
+  description: Sample application for config management practice
+
+database:
+  host: localhost
+  port: 5432
+  name: myapp_example
+  pool_size: 10
+  timeout: 30
+
+logging:
+  level: INFO
+  file: app.log
+  max_size_mb: 100
+  retention_days: 7
+
+features:
+  cache_enabled: true
+  rate_limit: 100
+  maintenance_mode: false
+
+server:
+  host: 0.0.0.0
+  port: 8000
+  workers: 4

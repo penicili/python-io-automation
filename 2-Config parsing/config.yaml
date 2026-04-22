@@ -1,0 +1,23 @@
+app:
+  description: Sample application for config management practice
+  name: MyApp
+  version: 1.0.0
+database:
+  host: prod-db.example.com
+  name: myapp_prod
+  pool_size: 10
+  port: '5432'
+  timeout: 30
+features:
+  cache_enabled: true
+  maintenance_mode: false
+  rate_limit: '1000'
+logging:
+  file: app.log
+  level: WARNING
+  max_size_mb: 100
+  retention_days: 7
+server:
+  host: 0.0.0.0
+  port: 8000
+  workers: '8'
