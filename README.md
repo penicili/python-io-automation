@@ -18,7 +18,6 @@ Perintah:
 - Baca secrets.json
 - Tulis ke envvars ke config.yaml sesuai argument
 
-## 3. Python Automation
 
 
 ## References
